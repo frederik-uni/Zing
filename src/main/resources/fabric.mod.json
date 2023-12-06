@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "zing",
+  "version": "${version}",
+  "name": "Zing",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/frederik-uni/Zing"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/zing/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "de.zing.zing.client.ZingClient"
+    ],
+    "main": [
+      "de.zing.zing.Zing"
+    ]
+  },
+  "mixins": [
+    "zing.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
